@@ -24,6 +24,7 @@ namespace Code_Assignment_HUD_1._0
             lives = 1;
             int spellSlots;
             spellSlots = 5;
+            int enemiesKilled;
 
             Console.WriteLine("Shotty Game Studios:");
             Console.WriteLine("Super Cool Fantasy Game, The Movie, The Game.");
@@ -69,7 +70,8 @@ namespace Code_Assignment_HUD_1._0
             Console.WriteLine("You gain 45 XP.");
             Console.ReadKey(true);
 
-            experience = experience + (koboldXP * 5.0f) + goblinXP;
+            enemiesKilled = 5;
+            experience = experience + (koboldXP * enemiesKilled) + goblinXP;
             spellSlots = spellSlots - 1;
             Console.WriteLine("");
             Console.WriteLine("Lives: " + lives);
@@ -98,7 +100,8 @@ namespace Code_Assignment_HUD_1._0
             Console.WriteLine("You gain 90 XP.");
             Console.ReadKey(true);
 
-            experience = experience + goblinXP + (orcXP * 2);
+            enemiesKilled = 2;
+            experience = experience + goblinXP + (orcXP * enemiesKilled);
             spellSlots = spellSlots - 1;
             Console.WriteLine("");
             Console.WriteLine("Lives: " + lives);
